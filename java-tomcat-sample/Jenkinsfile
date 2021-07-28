@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
+				//sh 'mvn clean package' if pom.xml is available in root direcotry. In my app, inside devops java-tomcat-sample application is there
                 sh 'mvn -f java-tomcat-sample/pom.xml clean package'
             }
             post {
