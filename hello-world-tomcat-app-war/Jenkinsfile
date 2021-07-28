@@ -9,7 +9,7 @@ pipeline {
             post {
                 success {
                     echo "Now Archiving the Artifacts...."
-                    archiveArtifacts artifacts: '**/java-tomcat-maven-example.war'
+                    archiveArtifacts artifacts: '**/hello-world.war'
                 }
             }
         }
